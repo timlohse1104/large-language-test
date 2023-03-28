@@ -41,12 +41,24 @@ Testing repo to experiment with large language models.
 1. Start conversation
    `node ./openai/js/conversation.js`
 
-2. Chat with ai
+2. Customize chat
+   `Do you want to modify the chat? (y/n): y`
+   If `n` is selected the chat begins without customization.
+
+3. Customize system behaviour
+   `What do you want the chat to be?: `
+   E.g. `Always answer in german with bavarian accent.`, the AI will always follow those rules.
+
+4. Customize answer temperature
+   `Enter the desired temperature (0-5, default: 0.5): `
+   E.g. `0`, the following chat will be nearly deterministic. `5`, the chat will be very random.
+
+5. Chat with ai
    `You: <your_input>`
 
-3. Receive ai response
+6. Receive ai response
    `AI: <ai_response>`
 
-4. End conversation
+7. End conversation
    `You: #stop`
 
